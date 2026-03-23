@@ -8,8 +8,9 @@ import { ChevronDownIcon, ChevronUpIcon } from "lucide-react"
 function Accordion({
   className,
   collapsible,
+  type,
   ...props
-}: AccordionPrimitive.Root.Props & { collapsible?: boolean }) {
+}: AccordionPrimitive.Root.Props & { collapsible?: boolean; type?: string }) {
   return (
     <AccordionPrimitive.Root
       data-slot="accordion"
